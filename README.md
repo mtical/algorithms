@@ -1,8 +1,10 @@
 #### java implementations of various algorithms
+- Breadth First Search (LinkedList queue)
 - Depth First Search
-    - Cycle detection
-    - Maze Solver
-    - Topological Ordering
+    - Stack implementation
+    - Cycle detection (recursive)
+    - Maze Solver (recursive)
+    - Topological Ordering (recursive)
 - Dijkstra's
 - Bellman-Ford
 - DAG Shortest Path
