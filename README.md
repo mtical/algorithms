@@ -1,4 +1,4 @@
-#### java implementations of various algorithms
+### Java implementations of various algorithms
 - Breadth First Search (LinkedList queue)
 - Depth First Search
     - Stack implementation
@@ -8,3 +8,10 @@
 - Dijkstra's
 - Bellman-Ford
 - DAG Shortest Path
+- Disjoint Sets
+    - Kruskal's
+    - Prims-Jarnik
+        - Eager implementation
+        - Lazy implementation
+        
+        

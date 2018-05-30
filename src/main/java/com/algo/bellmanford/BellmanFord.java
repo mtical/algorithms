@@ -13,6 +13,13 @@ public class BellmanFord {
 
   /**
    * Bellman-Ford: O(E*V) but can handle negatives.
+   *
+   * Slower than Dijkstras but more robust.  Relaxes all edges at the same time for V-1 iterations.
+   *
+   * It does V-1 iterations + 1 to detect cycles:
+   * If cost decreases in the V-th iteration, than there is a negative cycle, because all the paths are traversed up
+   * to the V-1 iteration.
+   *
    */
   public void bellmanFord(Vertex sourceVertex) {
     sourceVertex.setDistance(0);
