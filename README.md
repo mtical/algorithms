@@ -42,3 +42,5 @@ Derived from the [Advanced Algorithms Course](https://www.udemy.com/advanced-alg
         - Runtime: **O(V+E)**
     - Tarjan
         - Runtime: **O(V+E)**
+
+[Cool algorithm visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
