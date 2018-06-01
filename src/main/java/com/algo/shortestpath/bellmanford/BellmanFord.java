@@ -12,9 +12,14 @@ public class BellmanFord {
   }
 
   /**
-   * Bellman-Ford: O(E*V) but can handle negatives.
+   * Bellman-Ford
    *
-   * Slower than Dijkstras but more robust.  Relaxes all edges at the same time for V-1 iterations.
+   * Worst case runtime: O(E*V)
+   * Best case runtime: O(E)
+   * Worst case memory: O(V)
+   *
+   * Slower than Dijkstras but more robust and can handle negatives.
+   * Relaxes all edges at the same time for V-1 iterations.
    *
    * It does V-1 iterations + 1 to detect cycles:
    * If cost decreases in the V-th iteration, than there is a negative cycle, because all the paths are traversed up

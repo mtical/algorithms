@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class TopologicalOrdering {
-  // most common technique is DFS
-  // BFS uses a queue, DFS uses a stack.
+  // Most common technique is DFS to use stacks (BFS uses a queues).
   private Stack<Vertex> stack;
 
   public TopologicalOrdering() {

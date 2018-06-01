@@ -6,16 +6,26 @@ import java.util.List;
 import java.util.Stack;
 
 public class AcyclicShortestPath {
+  /**
+   *
+   * Runtime: O(V+E) for the topological sort, O(V) for the stack iteration
+   * @param vertices
+   * @param source
+   * @param target
+   */
   public void shortestPath(List<Vertex> vertices, Vertex source, Vertex target) {
+    int i = 0;
     source.setDistance(0);
+
+    // O(V+E)
     TopologicalSort topologicalSort = new TopologicalSort();
     topologicalSort.makeTopologicalOrder(vertices);
 
     Stack<Vertex> stack = topologicalSort.getTopologicalOrder();
 
-
     // relax the edges - "move from MAX_VALUES to shorter values".
     for (Vertex actual : stack) {
+      i++;
       for (Edge e : actual.getAdjacenciesList()) {
         Vertex u = e.getStartVertex();
         Vertex v = e.getTargetVertex();
@@ -37,6 +47,7 @@ public class AcyclicShortestPath {
     else {
       System.out.println("target vertex shortest path " + target.getDistance());
     }
+    System.out.println(i);
   }
 
   public void showShortestPath(Vertex target) {

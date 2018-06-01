@@ -7,7 +7,9 @@ import java.util.PriorityQueue;
 
 public class DijkstrasAlgorithm {
   /**
-   * Dijkstra's Algorithm: O(E + V*logV)
+   * Dijkstra's Algorithm with heaps
+   *
+   * Runtime O(E + V*logV)
    *
    * It can find the shortest path from A to B but it is able to construct a shortest path tree as well -> defines the
    * shortest path from a source to all the other nodes.

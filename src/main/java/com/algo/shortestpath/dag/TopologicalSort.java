@@ -12,7 +12,7 @@ public class TopologicalSort {
   }
 
   /**
-   * O(V+E)
+   * Runtime: O(V+E)
    */
   public void makeTopologicalOrder(List<Vertex> vertices) {
     for (Vertex vertex : vertices) {

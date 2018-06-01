@@ -5,6 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class KruskalAlgorithm {
+  /**
+   * Average run time: O(E*log V)
+   * Worst case memory: O(E + V)
+   *
+   * @param vertices list
+   * @param edges    list
+   */
   public void spanningTree(List<Vertex> vertices, List<Edge> edges) {
     DisjointSet set = new DisjointSet(vertices);
     List<Edge> mst = new ArrayList<>();
