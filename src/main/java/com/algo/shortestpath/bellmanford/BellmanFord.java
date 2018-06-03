@@ -29,7 +29,7 @@ public class BellmanFord {
   public void bellmanFord(Vertex sourceVertex) {
     sourceVertex.setDistance(0);
 
-    for (int i = 0; i < vertexList.size()-1; ++i) {
+    for (int i = 0; i < vertexList.size()-1; i++) {
       // every iteration, relax all the edges.
       for (Edge edge : edgeList) {
         Vertex u = edge.getStartVertex();

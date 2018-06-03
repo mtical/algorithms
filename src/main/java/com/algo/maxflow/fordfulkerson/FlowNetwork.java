@@ -13,7 +13,7 @@ public class FlowNetwork {
     this.numOfEdges = 0;
     this.adjacenciesList = new ArrayList<>();
 
-    for (int i = 0; i < numOfVertices; ++i) {
+    for (int i = 0; i < numOfVertices; i++) {
       List<Edge> edgeList = new ArrayList<>();
       adjacenciesList.add(edgeList);
     }

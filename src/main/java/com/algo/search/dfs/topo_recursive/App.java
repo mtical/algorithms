@@ -31,7 +31,7 @@ public class App {
     // print and get stack.
     Stack<Vertex> stack = topologicalOrdering.getStack();
 
-    for (int i = 0; i < graph.size(); ++i) {
+    for (int i = 0; i < graph.size(); i++) {
       Vertex vertex = stack.pop();
       System.out.print(vertex.toString() + "->");
     }
