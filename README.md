@@ -42,5 +42,13 @@ Derived from the [Advanced Algorithms Course](https://www.udemy.com/advanced-alg
         - Runtime: **O(V+E)**
     - Tarjan
         - Runtime: **O(V+E)**
+- **Maximum flow**
+    - Ford-Fulkerson
+    - *Edmonds-Karp 
+        - Running time: **O(VE^2)** or **O(V^2 E)**
+
+
+
+
 
 [Cool algorithm visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
